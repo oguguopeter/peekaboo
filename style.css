@@ -1,0 +1,47 @@
+#stage {
+    width: 20rem;
+    height: 15rem;
+    background: green;
+    border: black 1px solid;
+    margin: 0 auto;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+  
+  span {
+    color: white;
+    font-size: 150%;
+  }
+  
+  #left-curtain, #right-curtain {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 10rem;
+    -webkit-transition: all 1s ease;
+    transition: all 1s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  #left-curtain {
+    background: red;
+    left: 0;
+  }
+  
+  #right-curtain {
+    background: blue;
+    right: 0;
+  }
+  
+  #stage:hover #left-curtain {
+    left: -10rem;
+  }
+  
+  #stage:hover #right-curtain {
+    right: -10rem;
+  }
